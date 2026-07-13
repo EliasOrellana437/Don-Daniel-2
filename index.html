@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Salud - Don Daniel</title>
+    
+    <!-- 1. Importamos Tailwind CSS desde su servidor oficial (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Importamos la tipografía "Inter" de Google Fonts para un look premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- 3. Definimos que toda la página use la nueva tipografía y un fondo crema súper sutil -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#fcfbf9] text-slate-800 antialiased min-h-screen pb-12">
+
+    <!-- Aquí irá nuestra estructura visual -->
+<!-- 1. MENÚ DE NAVEGACIÓN FLOTANTE / ESTILO CÁPSULA -->
+    <header class="p-4 sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto bg-white/75 backdrop-blur-md px-6 h-16 rounded-3xl flex items-center justify-between shadow-sm border border-slate-100/50">
+            <!-- Logotipo elegante de Don Daniel -->
+            <div class="text-lg font-black tracking-tight text-slate-800">
+                Don<span class="text-teal-600 font-extrabold">Daniel</span>
+            </div>
+            
+            <!-- Enlaces de navegación minimalistas -->
+            <div class="flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-slate-600">
+                <a href="#catalogo" class="hover:text-teal-600 transition-colors">Productos</a>
+                <a href="#contacto" class="hover:text-teal-600 transition-colors">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <!-- 4. Vinculamos nuestro archivo de JavaScript que controlará el buscador y filtros -->
+     <!-- 2. SECCIÓN HERO (PORTADA CON DISEÑO DE CURVAS ORGÁNICAS) -->
+    <section class="relative max-w-6xl mx-auto px-4 pt-6 pb-12 overflow-hidden">
+        
+        <!-- Esferas de luz difuminada (Efecto Pinterest) flotando en el fondo general -->
+        <div class="absolute top-12 right-4 w-80 h-80 bg-teal-200/40 rounded-full filter blur-3xl -z-10 animate-pulse" style="animation-duration: 8s;"></div>
+        <div class="absolute bottom-4 left-12 w-64 h-64 bg-emerald-200/30 rounded-full filter blur-3xl -z-10"></div>
+
+        <!-- Tarjeta Hero de gran formato con curvas amplias -->
+        <div class="bg-gradient-to-br from-teal-600 to-teal-800 rounded-[2.5rem] p-8 sm:p-12 md:p-16 text-white relative overflow-hidden shadow-xl shadow-teal-900/10">
+            
+            <!-- Patrón de ondas decorativo interno súper sutil -->
+            <div class="absolute inset-0 bg-white/[0.03] [mask-image:radial-gradient(ellipse_at_bottom_right,#000_40%,transparent_85%)] pointer-events-none"></div>
+            
+            <!-- Contenido textual alineado a la izquierda para un look asimétrico moderno -->
+            <div class="relative z-10 max-w-2xl space-y-6">
+                
+                <!-- Badge o Distintivo en forma de cápsula -->
+                <span class="bg-white/10 text-teal-100 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-white/10 backdrop-blur-md inline-block shadow-sm">
+                    Salud y Bienestar Familiar
+                </span>
+                
+                <!-- Título Bold con interlineado ajustado -->
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
+                    Tu catálogo de confianza, <br class="hidden sm:inline">
+                    ahora más cerca de ti.
+                </h1>
+                
+                <!-- Descripción limpia con tipografía ligera -->
+                <p class="text-teal-100/80 text-xs sm:text-sm md:text-base font-medium leading-relaxed max-w-lg">
+                    Explora nuestra selección de medicamentos esenciales. Encuentra lo que necesitas de forma rápida y consulta existencias directo por WhatsApp en segundos.
+                </p>
+
+                <!-- Pequeño recordatorio visual -->
+                <div class="pt-2 flex items-center gap-2.5 text-xs text-teal-200/90 font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Servicio activo y actualizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
